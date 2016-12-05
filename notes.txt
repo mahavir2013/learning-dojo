@@ -2,6 +2,8 @@ git init
 git add
 git add .gitignore
 git commit
+git remote add origin git@github.com:mahavir2013/learning-dojo.git
+git push -u origin master
 
 Getting started:
 Normally, once you've loaded a library's JavaScript file you have all of its methods available. This was true in the past with Dojo, but with the 1.7 release Dojo adopted the Asynchronous Module Definition (AMD) format for its source code, allowing completely modular web application development.
