@@ -1,0 +1,21 @@
+git init
+git add
+git add .gitignore
+git commit
+
+Getting started:
+Normally, once you've loaded a library's JavaScript file you have all of its methods available. This was true in the past with Dojo, but with the 1.7 release Dojo adopted the Asynchronous Module Definition (AMD) format for its source code, allowing completely modular web application development.
+
+Dojo.js defines two global functions for using it - require and define
+Dojo's basic modules for HTML DOM manipulation are dojo/dom and dojo/dom-construct.
+AMD loaders operate asynchronously, and in JavaScript asynchronous operation is implemented with callbacks, so the second parameter to require (line 17) is a callback function.
+The AMD loader passes the modules as parameters to the callback function (in the same order they were specified in the module id array).
+
+AMD Module:
+The AMD define function accepts similar parameters to the require function - an array of module ids and a callback function. The AMD loader stores the return value of the callback function as the module's value, so any other code that loads the module with require (or define) will receive a reference to the return value of the defining module.
+
+Waiting for the DOM:
+In the case of the DOM ready event, Dojo provides the dojo/domReady plugin. Simply include this plugin as a dependency in any require or define call and the callback will not be fired until the DOM is ready.
+In some cases, as with dojo/domReady, we only load a module for its side-effects and do not need a reference to it. The AMD loader has no way of knowing this — it always passes a reference to each module in the dependencies array to the callback function, so any modules for which you do not need to use the return value should be placed at the end of the dependency array, and references to them omitted from the parameter list to the callback function.
+
+Adding Visual Effects:
