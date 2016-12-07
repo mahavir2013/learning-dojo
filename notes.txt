@@ -22,3 +22,24 @@ In some cases, as with dojo/domReady, we only load a module for its side-effects
 
 Adding Visual Effects:
 
+ReactJS:
+=============
+React (sometimes styled React.js or ReactJS) is an open-source JavaScript library for data rendered as HTML.
+A JavaScript library for building user interface.
+React was created by Jordan Walke, a software engineer at Facebook.
+React is a declarative, efficient, and flexible JavaScript library for building user interfaces.
+Component Based
+
+ES6:
+=============
+Class
+Super
+Exctend
+Mixin
+Multiple/Miultilevel inheritance
+
+WebPack
+NodeJS
+GruntJS
+GulpJS
+Brunch
